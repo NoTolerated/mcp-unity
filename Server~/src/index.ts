@@ -24,6 +24,9 @@ import { registerGetGameObjectTool } from './tools/getGameObjectTool.js';
 import { registerTransformTools } from './tools/transformTools.js';
 import { registerCreateMaterialTool, registerAssignMaterialTool, registerModifyMaterialTool, registerGetMaterialInfoTool } from './tools/materialTools.js';
 import { registerDuplicateGameObjectTool, registerDeleteGameObjectTool, registerReparentGameObjectTool } from './tools/gameObjectTools.js';
+import { registerSearchGameObjectsTool } from './tools/searchGameObjectsTool.js';
+import { registerManageAssetTool } from './tools/manageAssetTool.js';
+import { registerTakeScreenshotTool } from './tools/takeScreenshotTool.js';
 import { registerBatchExecuteTool } from './tools/batchExecuteTool.js';
 import { registerGetMenuItemsResource } from './resources/getMenuItemResource.js';
 import { registerGetConsoleLogsResource } from './resources/getConsoleLogsResource.js';
@@ -81,6 +84,9 @@ registerTransformTools(server, mcpUnity, toolLogger);
 registerDuplicateGameObjectTool(server, mcpUnity, toolLogger);
 registerDeleteGameObjectTool(server, mcpUnity, toolLogger);
 registerReparentGameObjectTool(server, mcpUnity, toolLogger);
+registerSearchGameObjectsTool(server, mcpUnity, toolLogger);
+registerManageAssetTool(server, mcpUnity, toolLogger);
+registerTakeScreenshotTool(server, mcpUnity, toolLogger);
 
 // Register Material Tools
 registerCreateMaterialTool(server, mcpUnity, toolLogger);

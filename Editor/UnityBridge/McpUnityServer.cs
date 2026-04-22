@@ -375,6 +375,18 @@ namespace McpUnity.Unity
             GetGameObjectTool getGameObjectTool = new GetGameObjectTool();
             _tools.Add(getGameObjectTool.Name, getGameObjectTool);
 
+            // Register SearchGameObjectsTool
+            SearchGameObjectsTool searchGameObjectsTool = new SearchGameObjectsTool();
+            _tools.Add(searchGameObjectsTool.Name, searchGameObjectsTool);
+
+            // Register ManageAssetTool
+            ManageAssetTool manageAssetTool = new ManageAssetTool();
+            _tools.Add(manageAssetTool.Name, manageAssetTool);
+
+            // Register TakeScreenshotTool
+            TakeScreenshotTool takeScreenshotTool = new TakeScreenshotTool();
+            _tools.Add(takeScreenshotTool.Name, takeScreenshotTool);
+
             // Register DuplicateGameObjectTool
             DuplicateGameObjectTool duplicateGameObjectTool = new DuplicateGameObjectTool();
             _tools.Add(duplicateGameObjectTool.Name, duplicateGameObjectTool);
